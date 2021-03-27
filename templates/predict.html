@@ -9,13 +9,13 @@
 <div class="ui container", style="margin-top:50px">
 
   <h1>Iris Species Classification</h1>
-  <p> Based on the data your provided the prediction is Iris Setosa </p>
+  <p> Based on the data your provided the prediction is:</p>
     <div class="row justify-content-md-center">
        <div class="ui small image", style="text-align: center">
             {% if predictionStr == "0" %}
 
                 <img src="{{url_for('static', filename='iris_setosa.jpg')}}" class="img-thumbnail" />
-                
+                 <p>Iris Setosa</p>
             {% endif %}
         </div>
     </div>
@@ -25,7 +25,7 @@
             {% if predictionStr == "1" %}
 
                 <img src="{{url_for('static', filename='iris_versicolor.jpg')}}" class="img-thumbnail" />
-                <p> Prediction is Iris Versicolor </p>
+                <p>Iris Versicolor </p>
             {% endif %}
         </div>
     </div>
@@ -35,7 +35,7 @@
             {% if predictionStr == "2" %}
 
                 <img src="{{url_for('static', filename='iris_virginica.jpg')}}" class="img-thumbnail" />
-                <p> Prediction is Iris Virginica </p>
+                <p>Virginica </p>
             {% endif %}
         </div>
     </div>
