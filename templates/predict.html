@@ -8,13 +8,14 @@
 
 <div class="ui container", style="margin-top:50px">
 
-  <h1>Iris Species Prediction</h1>
+  <h1>Iris Species Classification</h1>
+  <p> Based on the data your provided the prediction is Iris Setosa </p>
     <div class="row justify-content-md-center">
        <div class="ui small image", style="text-align: center">
             {% if predictionStr == "0" %}
 
                 <img src="{{url_for('static', filename='iris_setosa.jpg')}}" class="img-thumbnail" />
-                <p> Prediction is Iris Setosa </p>
+                
             {% endif %}
         </div>
     </div>
